@@ -1,6 +1,6 @@
 {
   "name": "build-elixir",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Runs Elixir targets",
   "repository": "https://github.com/noseglid/atom-build-elixir",
   "license": "MIT",
@@ -28,6 +28,5 @@
     "elixir",
     "productivity"
   ],
-
   "main": "lib/elixir.js"
 }
