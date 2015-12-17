@@ -10,6 +10,7 @@ This packages provides the following targets:
 
  * `Elixir: mix compile`
  * `Elixir: mix compile --warnings-as-errors`
+ * `Elixir: mix test`
  * `Elixir: mix clean`
  * `Elixir: mix dialyzer`
 
