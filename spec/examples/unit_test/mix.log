@@ -1,0 +1,18 @@
+Generated unit_test app
+
+
+  1) test the truth (UnitTest)
+     test/unit_test.exs:7
+     Assertion with == failed
+     code:  1 + 1 == 99
+     left:  2
+     right: 99
+     stacktrace:
+       test/unit_test.exs:8: (test)
+
+
+
+Finished in 0.04 seconds
+1 test, 1 failure
+
+Randomized with seed 408093

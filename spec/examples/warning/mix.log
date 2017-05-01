@@ -1,0 +1,5 @@
+Compiling 1 file (.ex)
+warning: variable "arg1" is unused
+  lib/warning.ex:3
+
+Generated error app
