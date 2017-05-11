@@ -26,6 +26,13 @@ describe('elixir provider', () => {
     fs.removeSync(directory);
   });
 
+  it('should not find any messages', () => {
+    const fn = builder.settings()[0].functionMatch;
+    const output = fs.readFileSync('./spec/examples/timing.log').toString();
+    const messages = fn(output);
+    expect(messages.length).toEqual(0);
+  });
+
   it('should find compiler warning', () => {
     const fn = builder.settings()[0].functionMatch;
     const output = fs.readFileSync('./spec/examples/warning/mix.log').toString();
