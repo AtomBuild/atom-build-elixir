@@ -1,6 +1,6 @@
 {
   "name": "build-elixir",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "description": "Runs Elixir targets",
   "repository": "https://github.com/AtomBuild/atom-build-elixir",
   "license": "MIT",
@@ -30,5 +30,7 @@
     "productivity"
   ],
   "main": "lib/elixir.js",
-  "scripts": { "test": "atom --test spec/*" }
+  "scripts": {
+    "test": "atom --test spec/*"
+  }
 }
