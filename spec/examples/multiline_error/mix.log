@@ -1,0 +1,11 @@
+Compiling 1 file (.ex)
+
+== Compilation error on file lib/multiline_error.ex ==
+** (UndefinedFunctionError) function Map.update/5 is undefined or private. Did you mean one of:
+
+      * update/4
+
+    (elixir) Map.update(1, 2, 3, 4, 5)
+    lib/multiline_error.ex:4: (module)
+    (stdlib) erl_eval.erl:670: :erl_eval.do_apply/6
+

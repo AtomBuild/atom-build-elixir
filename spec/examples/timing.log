@@ -1,0 +1,25 @@
+..........
+10:31:13.116 [debug] QUERY OK db=8.8ms
+INSERT INTO "events" ("data") VALUES ($1) RETURNING "id" [%{aggregate_id: "222", message: "hey"}]
+
+10:31:13.121 [debug] QUERY OK db=4.4ms
+select * from events where data->>'aggregate_id' = $1 ["222"]
+.
+10:31:13.125 [debug] QUERY OK db=3.3ms
+
+INSERT INTO "events" ("data") VALUES ($1) RETURNING "id" [%{aggregate_id: "123", message: "hello"}]
+.
+10:31:13.131 [debug] QUERY OK db=4.4ms
+INSERT INTO "events" ("data") VALUES ($1) RETURNING "id" [%{aggregate_id: "1", message: "one"}]
+
+10:31:13.133 [debug] QUERY OK db=1.5ms
+INSERT INTO "events" ("data") VALUES ($1) RETURNING "id" [%{aggregate_id: "1", message: "two"}]
+
+10:31:13.136 [debug] QUERY OK db=2.9ms queue=0.1ms
+select * from events where data->>'aggregate_id' = $1 ["1"]
+.
+
+Finished in 0.2 seconds
+13 tests, 0 failures
+
+Randomized with seed 864546

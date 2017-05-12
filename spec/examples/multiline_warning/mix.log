@@ -1,0 +1,8 @@
+Compiling 1 file (.ex)
+warning: function Map.update/7 is undefined or private. Did you mean one of:
+
+      * update/4
+
+  lib/multiline_warning.ex:5
+
+Generated multiline_warning app
